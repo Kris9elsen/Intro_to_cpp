@@ -1,4 +1,5 @@
 #include "headers/Person.h"
+#include "headers/Bil.h"
 
 Person::Person(){} // Constructo
 Person::~Person(){} // Destructor
@@ -8,6 +9,11 @@ Person::Person(string n, string m, Dato b){
     name = n;
     mail = m;
     birthdate = b;
+}
+
+// Setters
+void Person::add_car(Bil c){
+    car = c;
 }
 
 // Getters
@@ -22,6 +28,10 @@ string Person::get_mail(){
 }
 
 // Get birthdate
-Dato Person::get_Birthdate(){
+Dato Person::get_birthdate(){
     return birthdate;
+}
+
+Bil Person::get_car(){
+    return car;
 }

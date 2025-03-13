@@ -4,27 +4,26 @@
 #pragma once
 
 #include <string>
-#include "Person.h"
 
 using namespace std;
 
 class Bil{
 public:
     Bil(); // Constructor
-    Bil(Person, string, string, string); // RegNr, make, model
+    Bil(string, string, string, int); // RegNr, make, model
     ~Bil(); // Destructor
 
     // Getters
-    Person get_owner();
     string get_reg();
     string get_make();
     string get_model();
+    int get_year();
 
 private:
-    Person owner;
     string reg;
     string make;
     string model;
+    int year;
 };
 
 #endif
