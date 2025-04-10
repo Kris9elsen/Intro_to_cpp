@@ -36,14 +36,6 @@ int main() {
     std::cout << "Husdyr liste er ryddet op." << std::endl;
     std::cout << "Tryk på en tast for at afslutte." << std::endl;
     std::cin.get(); // Wait for user input
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignore any remaining input
-    std::cin.clear(); // Clear the error state
-    std::cin.sync(); // Synchronize the input buffer
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignore any remaining input
-    std::cin.get(); // Wait for user input again
-    std::cout << "Programmet afsluttes." << std::endl;
-    std::cout << "Tryk på en tast for at afslutte." << std::endl;
-    std::cin.get(); // Wait for user input
 
     return 0;
 }
