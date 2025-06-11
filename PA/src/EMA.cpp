@@ -21,7 +21,7 @@ bool EMA::isValid() const {
 
 // Check for '@' and index
 int EMA::snabelA() const {
-    int aPos;
+    int aPos = {};
     int total = 0;
 
     for (u_long i = 0; i < emailAddress.length(); i++) {
