@@ -17,6 +17,7 @@ public:
     EAN(string);
 
     bool isValid();
+    string isbnToEan(string);
 
 private:
     string eanNr;
